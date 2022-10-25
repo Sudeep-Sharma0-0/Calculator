@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/style.css">
+	
+	<script src="scripts/main.js" defer></script>
+</head>
+<body>
+	<main class="main">
+		<div class="calculator">
+			<div class="display">
+				<input type="text" name="display" id="display">
+				<input type="text" name="display" id="operand">
+				<input type="text" name="display" id="answer">
+			</div>
+			<div class="buttons">
+				<div class="row1">
+					<button onclick="getClick(7)">7</button>
+					<button onclick="getClick(8)">8</button>
+					<button onclick="getClick(9)">9</button>
+					<button class="special" onclick="getClick('DEL')">DEL</button>
+					<button class="special" onclick="getClick('AC')">AC</button>
+				</div>
+				<div class="row2">
+					<button onclick="getClick(4)">4</button>
+					<button onclick="getClick(5)">5</button>
+					<button onclick="getClick(6)">6</button>
+					<button onclick="getClick('x')">x</button>
+					<button onclick="getClick('÷')">÷</button>
+				</div>
+				<div class="row3">
+					<button onclick="getClick(1)">1</button>
+					<button onclick="getClick(2)">2</button>
+					<button onclick="getClick(3)">3</button>
+					<button onclick="getClick('-')">-</button>
+					<button onclick="getClick('+')">+</button>
+				</div>
+				<div class="row4">
+					<button onclick="getClick(0)">0</button>
+					<button onclick="getClick('.')">.</button>
+					<button onclick="calculate()">=</button>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<p>&#xf1f9 &#xf09b<a href="https://github.com/Sudeep-Sharma0-0" target="_blank">Sudeep Sharma</a></p>
+	</footer>
+</body>
+</html>
